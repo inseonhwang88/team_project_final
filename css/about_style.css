@@ -1,0 +1,141 @@
+@charset:"utf-8";
+
+body{font-size:12px;}
+	.skip dd a{display:block;}
+	#header{position:absolute; width:100%;background: #373737; z-index: 9999;}
+	#header h1{float: left;}
+	#header h1 a{
+		display:block;
+		width:172px; 
+		height:38px;
+		background:
+		url(../img/logo.png) 0 0 no-repeat;
+		margin-right: 70px;
+		margin-top: 20px;
+		margin-left: 0;
+		text-indent: -9999em;
+	}
+	#header .gnb{float:right;}
+	#header .gnb li{list-style:none; display:inline-block; height: 80px;}
+	#header .gnb li a{display:block;color:white; background-color: #373737; text-decoration: none; font-weight: bold; text-transform: uppercase; margin-right: 25px; margin-top:25px; margin-bottom:25px;line-height: 30px; font-size: 15px;}
+	#header .gnb .last a{margin-right: 0px;}
+	#header .gnb li a:hover, #header .gnb li a.on{color:#22d1f0;}
+
+	/* contents */
+	#contents{padding-top: 120px;}
+
+	#contents .acts{margin-bottom: 60px;}
+	#contents .acts .act01{width:300px; float:left; margin-right:27px; padding: 20px 0px 20px 0px;text-align: left; border: 1px solid #eee;}	
+	#contents .acts .act01 li{margin: 0 30px 0 30px;}
+	#contents .acts .act01 li h4{color:#ff5a5d;text-align: left; font-size: 21px; font-weight: normal; vertical-align: middle; margin-bottom: 12px;}
+	#contents .acts .act01 li p{width:248px; color:#77746e; text-align: left;margin-bottom: 12px;}
+	#contents .acts .act01 li a{display:block; color:#ff5a5d;text-align: left; text-transform: uppercase; background: url(../img/btn_about01.png) no-repeat; background-size: 10px 10px; background-position: 80px 3px;}
+	#contents .acts .act01 li a:hover{color:#00d1f0;text-align: left; text-decoration: none; background: url(../img/btn_about00.png) no-repeat;background-size: 10px 10px; background-position: 80px 3px;}
+	
+	#contents .acts .act02{width:300px; text-align: left; margin-right:27px; padding: 20px 0px 20px 0px;float:left;border: 1px solid #eee; }	
+	#contents .acts .act02 li{margin: 0 30px 0 30px;}
+	#contents .acts .act02 li h4{color:#7cd542;text-align: left; font-size: 21px; font-weight: normal; vertical-align: middle; margin-bottom: 12px;}
+	#contents .acts .act02 li p{width:248px; color:#77746e; text-align: left;margin-bottom: 12px;}
+	#contents .acts .act02 li a{display:block; color:#7cd542;text-align: left; text-transform: uppercase; background: url(../img/btn_about02.png) no-repeat; background-size: 10px 10px; background-position: 80px 3px;}
+	#contents .acts .act02 li a:hover{color:#00d1f0;text-align: left; text-decoration: none; background: url(../img/btn_about00.png) no-repeat;background-size: 10px 10px; background-position: 80px 3px;}
+	
+	#contents .acts .act03{width:300px; float:right;text-align: left; padding: 20px 0px 20px 0px; border: 1px solid #eee;}	
+	#contents .acts .act03 li{margin: 0 30px 0 30px;}
+	#contents .acts .act03 li h4{color:#f7b11a;text-align: left; font-size: 21px; font-weight: normal; vertical-align: middle; margin-bottom: 12px;}
+	#contents .acts .act03 li p{width:248px; color:#77746e; text-align: left;margin-bottom: 12px;}
+	#contents .acts .act03 li a{display:block; color:#f7b11a;text-align: left; text-transform: uppercase; background: url(../img/btn_about03.png) no-repeat; background-size: 10px 10px; background-position: 80px 3px;}
+	#contents .acts .act03 li a:hover{color:#00d1f0;text-align: left; text-decoration: none; background: url(../img/btn_about00.png) no-repeat;background-size: 10px 10px; background-position: 80px 3px;}
+	
+    #contents .intro{ margin-bottom:60px;}
+    #contents .intro .wrap{}
+    #contents .intro .wrap h3{color:#0d0c1a;font-size: 21px; text-align: left; margin-bottom: 28px; text-transform: uppercase;}
+    #contents .intro .wrap p img{float:left;display:block; width: 386px; height: 234px;}
+	#contents .intro .wrap .sen{width: 553px; float: right; margin-right: 0; text-align: left;}
+	#contents .intro .wrap .sen p{color:#d3dadb; font-size: 11px; margin-bottom: 27px;line-height: 1.2;}
+	#contents .intro .wrap .sen p a{color:#2a0c1a; font-size: 12px; font-weight: bold;}
+	#contents .intro .wrap .sen p a:hover{color:; text-decoration: none;}
+	#contents .intro .wrap .sen p.last{color:#d3dadb; font-size: 11px; margin-bottom: 2px;line-height: 1.2;}
+
+
+	#contents .staffs{float:left; width:100%; padding-top:60px; background: url(../img/about_img_staff.jpg) no-repeat;}
+	#contents .staffs h3{color:white; font-size:21px ;text-align:left; text-transform: uppercase; margin-bottom:24px;}
+
+	#contents .staffs ul{}
+
+    #contents .staffs ul .staff01{width: 220px; margin-right:26px;float: left; padding-bottom: 60px; }
+    #contents .staffs ul .staff01 p img{display:block; width: 220px; height:220px ; margin-bottom: 38px;}
+    #contents .staffs ul .staff01 p a{display:block; color:white; font-size:14px; text-align: left; margin-bottom: 16px;}
+    #contents .staffs ul .staff01 p a:hover{color:orange;}
+    #contents .staffs ul .staff01 p{ width: 220px;color:white; font-size:11px; text-align: left;}
+
+    #contents .staffs ul .staff02{width: 220px;margin-right:26px;float: left;padding-bottom: 60px;}
+    #contents .staffs ul .staff02 p img{display:block; width: 220px; height:220px ; margin-bottom: 38px;}
+    #contents .staffs ul .staff02 p a{display:block; color:white; font-size:14px; text-align: left; margin-bottom: 16px;}
+    #contents .staffs ul .staff02 p a:hover{color:orange;}
+    #contents .staffs ul .staff02 p{ width: 220px;color:white; font-size:11px; text-align: left;}
+
+    #contents .staffs ul .staff03{width: 220px; margin-right:26px;float: left;padding-bottom: 60px;}
+    #contents .staffs ul .staff03 p img{display:block; width: 220px; height:220px ; margin-bottom: 38px;}
+    #contents .staffs ul .staff03 p a{display:block; color:white; font-size:14px; text-align: left; margin-bottom: 16px;}
+    #contents .staffs ul .staff03 p a:hover{color:orange;}
+    #contents .staffs ul .staff03 p{color:white; font-size:11px; text-align: left; }
+
+	#contents .staffs ul.last{float: right;}
+    #contents .staffs ul .staff04{width: 220px; margin-right: 0px;padding-bottom: 60px;}
+    #contents .staffs ul .staff04 p img{display:block; width: 220px; height:220px ; margin-bottom: 38px;}
+    #contents .staffs ul .staff04 p a{display:block; color:white; font-size:14px; text-align: left; margin-bottom: 16px;}
+    #contents .staffs ul .staff04 p a:hover{color:orange;}
+    #contents .staffs ul .staff04 p{color:white; font-size:11px; text-align: left; }*/
+
+
+    #contents .history{}
+    #contents .history .his01{width:257px;text-align: left; float: left; margin-right: 93px; padding-top: 60px;}
+    #contents .history .his01 li h4{ margin-bottom: 24px; }
+    #contents .history .his01 li h4 a{display:block;font-weight: bold;text-decoration: none; line-height: 1.6;}
+    #contents .history .his01 li h4 a:hover{color:#05ebff;}
+    #contents .history .his01 li p{color:#99abb4; margin-bottom: 60px;}
+
+    #contents .history .his02{width:257px;text-align: left; float: left; margin-right: 93px;padding-top: 60px;}
+    #contents .history .his02 li h4{ margin-bottom: 24px; }
+    #contents .history .his02 li h4 a{display:block;font-weight: bold;text-decoration: none;line-height: 1.6;}
+    #contents .history .his02 li h4 a:hover{color:#05ebff;}
+    #contents .history .his02 li p{color:#99abb4; margin-bottom: 60px;}
+
+    #contents .history .his03{width:257px;text-align: left; float: right; margin-right:0;padding-top: 60px;}
+    #contents .history .his03 li h4{ margin-bottom: 24px; }
+    #contents .history .his03 li h4 a{display:block;font-weight: bold;text-decoration: none;line-height: 1.6;}
+    #contents .history .his03 li h4 a:hover{color:#05ebff;}
+    #contents .history .his03 li p{color:#99abb4; margin-bottom: 60px;}
+
+
+	/*footer*/
+	#footer{width:100%;background-color: #f7f7f7;padding-top: 40px;}
+	#footer .sns_group{width:220px; margin: 0 auto; margin-bottom: 40px; }
+	#footer .sns_group li{float:left;}
+	#footer .sns_group li a{display: block; text-indent: -9999em;}
+	#footer .sns_group li.gg a{display: block; width:41px; height:41px; margin-right:16px;background: url(../img/btn_group_01.png) no-repeat; background-size: 41px 41px;}
+	#footer .sns_group li.gg a:hover{background: url(../img/btn_group_11.png) no-repeat;background-size: 41px 41px;}
+	#footer .sns_group li.li a{display: block; width:41px; height:41px; margin-right:16px;background: url(../img/btn_group_02.png) no-repeat; background-size: 41px 41px;}
+	#footer .sns_group li.li a:hover{background: url(../img/btn_group_22.png) no-repeat;background-size: 41px 41px;}
+	#footer .sns_group li.wf a{display: block; width:41px; height:41px; margin-right:0px;background: url(../img/btn_group_03.png) no-repeat; background-size: 41px 41px;}
+	#footer .sns_group li.wf a:hover{background: url(../img/btn_group_33.png) no-repeat;background-size: 41px 41px;}
+	#footer .sns_group li.fb a{display: block; width:41px; height:41px; margin-right:16px;background: url(../img/btn_group_04.png) no-repeat; background-size: 41px 41px;}
+	#footer .sns_group li.fb a:hover{background: url(../img/btn_group_44.png) no-repeat;background-size: 41px 41px;}
+
+	#footer .btm_menu{width:422px; margin: 0 auto; margin-bottom: 40px; padding-top: 10px;}
+	#footer .btm_menu li{float:left;}
+	#footer .btm_menu li a{display: block; color:#464541; font-size:11px; font-weight: bold; padding-right: 30px; text-transform: uppercase; text-decoration: none;}
+	#footer .btm_menu li a.last{margin-right: 0px;}
+	#footer .btm_menu li a:hover, #footer .btm_menu li a.on{color:#00d1f0;}
+
+	#footer .copy{width:150px; margin: 0 auto;padding-top: 10px; padding-bottom: 30px;}
+	#footer .copy li{float:left;}
+	#footer .copy li p{color:#96948a; font-size: 10px; text-transform: uppercase; }
+	#footer .copy li.border{border-right: 1px solid #ccc;margin-right:5px; padding-right:5px;}
+	#footer .copy li a{display: block;color:#96948a; text-transform: uppercase; }
+	#footer .copy li a:hover{text-decoration: underline;}
+
+
+	#go_top a{position: fixed; bottom:60px; right:60px; z-index:500; display: block; width: 45px; height:45px; background:url(../img/go_top_01.png) no-repeat;  text-indent:-9999em;/* background-position: 10px 10px;*/ }
+	#go_top a:hover{background: url(../img/go_top_02.png) no-repeat;}
+

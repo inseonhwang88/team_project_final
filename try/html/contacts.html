@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacts</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Google Maps API -->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+</head>
+<body>
+<div class="skip"><a href="#">skip navigation</a></div>
+<div class="go_top"><a href="#header">go to the top</a></div>
+
+<hr>
+
+<div id="wrap">
+	<div id="header">
+		<h1>hope</h1>
+		<div class="nav">
+			<h2>main menu</h2>
+			<ul id="gnb">
+				<li><a href="../index.html">Main</a></li>
+				<li><a href="about_us.html">About us</a>
+					<ul>
+						<li><a href="#">History</a></li>
+						<li><a href="#">Staff</a>
+							<ul>
+								<li><a href="#">Fresh</a></li>
+								<li><a href="#">Archive</a></li>
+							</ul>
+						</li>
+						<li><a href="#">News</a></li>
+					</ul>
+				</li>
+				<li><a href="donations.html">Donations</a></li>
+				<li><a href="reports.html">Reports</a></li>
+				<li><a href="#">Contacts</a></li>
+			</ul><!-- //gnb -->
+		</div><!-- //nav -->
+	</div><!-- //header -->
+	<div id="container">
+		<div id="map">
+			<script type="text/javascript">
+				window.onload = function() {
+				    var map_div = document.getElementById("map_div");
+				    // 표시 위치 결정
+				    var latlng = new google.maps.LatLng(37.508996,126.891583);
+				    // 지도 표시
+				    var gmap = new google.maps.Map(
+				        map_div, {
+				        zoom:16,
+				        center: latlng,
+				        mapTypeId: google.maps.MapTypeId.ROADMAP
+				    });
+				    // 아이콘 표시
+				    var marker = new google.maps.Marker({
+				        position: latlng,
+				        map: gmap,
+				        title: 'meet'
+				    });
+				    // 아이콘을 클릭했을 때
+				    google.maps.event.addListener(marker, 'click', function(event) {
+				      alert("meet position");
+				    });
+				};
+			</script>
+			<!-- 지도를 표시 -->
+			<div id="map_div" style="width:100%; height:480px;"></div>
+		</div><!-- //map -->
+		<div class="info">
+			<h3>infomation</h3>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui.Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi.</p>
+			<ul>
+				<li>
+					<address>
+						<span>8901 Marmora Road,</span>
+						<span>Glasgow, D04 89GR.</span>
+					</address>
+				</li>
+				<li>
+					<address>
+						<span>+1 800 559 6580</span>
+						<span>+1 800 603 6035</span>
+					</address>
+				</li>
+				<li>
+					<address>
+						<a href="mailto:withlord88@naver.com">withlord88@naver.com</a>
+					</address>
+				</li>
+			</ul>
+			
+		</div>
+		<div class="message">
+			<h3>Contact Form</h3>
+			<section>
+				<form action="go.php" method="post">
+					<fieldset>
+						<legend>Contact form</legend>
+						<p>
+							<label for="u_name">Name</label>
+							<input type="textarea" id="u_name" name="u_name" value="" placeholder="Name" autofocus required autocomplete="">
+						</p>
+						<p>
+							<label for="u_email">E-mail</label>
+							<input type="t
+							ext" id="u_email" name="u_email" value="" placeholder="Email"  required>
+						</p>
+						<p>
+							<label for="u_phone">Phone</label>
+							<input type="text" id="u_phone" name="u_phone" value="" placeholder="Phone" required autocomplete="">
+						</p>
+						<p>
+							<label for="u_memo">Message</label>
+							<textarea id="u_memo" cols="50" rows="6" name="message">Message</textarea>
+						</p>
+						<!-- <p>
+							<label for="u_memo">Message</label>
+							<input type="text" id="u_memo" name="u_memo" value="" placeholder="Memo" required autocomplete="">
+						</p> -->
+						<button type="submit">Send message</button>
+					</fieldset>
+				</form>
+			</section>
+		</div><!-- //message -->
+	</div><!-- //contents -->
+	<div id="footer">
+		<h3>sns_menu</h3>
+			<ul class="sns_group">
+				<li><a href="#"><img src="http://placehold.it/50x50" alt=""></a></li>
+				<li><a href="#"><img src="http://placehold.it/50x50" alt=""></a></li>
+				<li><a href="#"><img src="http://placehold.it/50x50" alt=""></a></li>
+				<li><a href="#"><img src="http://placehold.it/50x50" alt=""></a></li>
+			</ul>
+		<h3>footer_menu</h3>	
+			<ul>
+				<li><a href="../index.html">Main</a></li>
+				<li><a href="about_us.html">About us</a></li>
+				<li><a href="donations.html">Donations</a></li>
+				<li><a href="reports.html">Reports</a></li>
+				<li><a href="#">Contacts</a></li>
+			</ul>
+		</div>
+		<ul class="copy">
+			<li>&copy; 2015</li>
+			<li><a href="#">privacy pocicy</a></li>
+		</ul>
+	</div><!-- //footer -->
+</div><!-- //wrap -->

@@ -1,0 +1,68 @@
+/* Reset */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+html,body{width:100%;height:100%}
+html{overflow-y:scroll;font-size:10px}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,button{margin:0;padding:0}
+body,h1,h2,h3,h4,input,button{font-family: 'Open Sans', sans-serif,arial,Helvetica,AppleSDGothicNeo,sans-serif;font-size:12px;color:#444;}
+body{background-color:#fff;text-align:center;*word-break:break-all;-ms-word-break:break-all}
+img,fieldset,iframe{border:0 none}
+li{list-style:none}
+input,select,button{vertical-align:middle}
+img{vertical-align:top}
+i,em,address{font-style:normal}
+label,button{cursor:pointer}/*커서 올리면 손가락 모양*/
+button{margin:0;padding:0}
+a{color:#222;text-decoration:none}
+a:hover{color:#000;text-decoration:underline}
+button *{position:relative}
+button img{left:-3px;*left:auto}
+html:first-child select{height:20px;padding-right:6px}
+option{padding-right:6px}
+hr{display:none}
+legend{*width:0}
+table{border-collapse:collapse;border-spacing:0}
+/*위에는 무조건 쓰는 것.*/
+/*main이나 css 모두 적용할 때 쓰는 것.*/
+/*모든 페이지에 작성하는 것은 추가해서 저장한다.*/
+
+/*clearfix*/
+.clearfix{
+	*zoom:1;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+/* Hide */
+.blind{
+	display:block; 
+	position: absolute; 
+	left:0; 
+	top:-9999em;
+}
+/*display:none;은 접근성에 안 좋다. 요소 자체를 없앤다.*/
+
+/* Skip:사이트 띄웠을 때 tab키 누르면 제일 처음 나오는 것. #contents */
+.skip a{
+	position: absolute; 
+	left:0; 
+	top:-9999em;
+	z-index: 9999;
+	display: block;
+	width: 100%;
+	background-color: #039;
+	color: #eee;
+	font-family: ;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 30px;
+/*디자인 먼저*/
+}
+.skip a:hover,
+.skip a:active,
+.skip a:focus{top:0;}
+
+.wrap{width:960px; margin: 0 auto;}

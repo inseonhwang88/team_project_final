@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reports</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/sub.css">
+	<link href='//fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="http://static.templatemonster.com/css/ie.css?0403e34" media="screen">
+<script src="http://static.templatemonster.com/js/html5shiv.js?faec271"></script>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" href="http://static.templatemonster.com/css/compiledie9.css?0403e34" media="screen">
+<![endif]-->
+<!--[if (gt IE 9)|(!IE)]><!-->
+<!--<![endif]-->
+	<script src="../js/jquery-1.11.2.min.js"></script>
+	<style>
+	</style>
+
+</head>
+<body id="reports">
+<dl class="skip">
+    <dt class="blind">skip navigation</dt>
+    <dd>
+        <a href="#contents">skip to Contents</a>
+    </dd>
+</dl>
+
+<div id="header" class="clearfix">
+	<div class="wrap">
+		<h1><a href="#">hope</a></h1>
+		<h2 class="blind">main menu</h2>
+		<ul class="nav">
+			<li><a href="../index.html" >Main</a>
+			<li><a href="about_us.html">About us</a>
+				<ul class="sub">
+					<li class="line"><a href="#">History</a>
+						<!-- <ul>
+							<li><a href="#">FRESH</a></li>
+							<li><a href="#">ARCHIVE</a></li>
+						</ul>-->
+					</li>
+					<li class="line"><a href="#">STAFF</a></li>
+					<li class="line"><a href="#">NEWS</a></li>
+				</ul>
+			</li>
+			<li><a href="donations.html">Donations</a></li>
+			<li><a href="#" class="on">Reports</a></li>
+			<li class="last"><a href="contacts.html">Contacts</a></li>
+		</ul>
+	</div>	
+</div><!-- header end -->
+<div id="footer">
+	<h3 class="blind">sns_menu</h3>
+	<ul class="sns_group clearfix">
+		<li class="li"><a href="#">linkedin</a></li>
+		<li class="gg"><a href="#">google</a></li>
+		<li class="fb"><a href="#">facebook</a></li>	
+		<li class="wf"><a href="#">wifi</a></li>	
+	</ul>
+	<h3 class="blind">footer_menu</h3>	
+	<ul class="btm_menu clearfix">
+		<li><a href="../index.html" >Main</a></li>
+		<li><a href="about_us.html">About us</a></li>
+		<li><a href="donations.html">Donations</a></li>
+		<li><a href="reports.html">Reports</a></li>
+		<li class="last"><a href="#" class="on">Contacts</a></li>
+	</ul>
+	<ul class="copy clearfix">
+		<li class="border"><p>&copy; 2015</p></li>
+		<li><a href="#">privacy policy</a></li>
+	</ul>
+</div><!-- //footer -->
+
+<div id="go_top">
+	<a href="#header">top</a>
+</div>
+
+<script>
+ $('.sub').hide();
+ $('.nav > li > a').mouseenter(function(){
+ 	$(this).addClass('on')
+ 	.next('ul').show();
+ });
+
+</script>
+
+</body>
+</html>
